@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-track{
+	background-color: #bbdefb;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2196f3;
+}
+.nav{
+	font-family: 'Product Sans', sans-serif;
+	background-color: rgba(16, 191, 222, 0.56);
+	padding: 20px 80px;
+	display: flex;
+	z-index: 2;
+}
+.nav-item{
+	font-weight: 800;
+	font-size: 15px;
+	text-decoration: none;
+	color: #fff;
+	padding-right: 30px;
+}
+.first-big{
+	height: 100vh;
+	background-image: url(images/bg-main.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.second-big{
+	height: 100vh;
+}
+.img-info{
+	padding-top: 5%;
+	height: 90%;
+}
+.img-info-real{
+	height: 95%;
+	width: auto;
+}
