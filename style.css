@@ -66,8 +66,10 @@ body{
 	color: #676767;
 	font-family: 'Raleway', sans-serif;
 }
+
+
+
 .third-big{
-<<<<<<< HEAD
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -78,21 +80,10 @@ body{
 }
 .inner-third{
 	transform: skewY(8deg);
-=======
-	text-align: center;
-	height: 200vh;
-	background-color: #d7d8da;
-	padding: 40px 60px;
-	transform: skewY(-10deg);
-}
-.third-big div{
-	transform: skewY(10deg);
->>>>>>> baffe858f94950f728e5c4359ad9a11179705f73
 }
 .events-head{
 	font-family: 'Raleway Bold', sans-serif;
 	font-size: 30px;
-<<<<<<< HEAD
 }
 .events-info{
 	font-size: 14px;
@@ -133,6 +124,4 @@ body{
 	line-height: 25px;
 	width: 600px;
 	color: #646567;
-=======
->>>>>>> baffe858f94950f728e5c4359ad9a11179705f73
 }
