@@ -57,7 +57,7 @@ body{
 .info{
 	padding: 40px 160px;
 }
-.info-head{
+.heading{
 	font-size: 25px;
 	font-family: 'Raleway Bold', sans-serif;
 }
@@ -81,10 +81,6 @@ body{
 .inner-third{
 	transform: skewY(8deg);
 }
-.events-head{
-	font-family: 'Raleway Bold', sans-serif;
-	font-size: 30px;
-}
 .events-info{
 	font-size: 14px;
 	line-height: 25px;
@@ -95,7 +91,7 @@ body{
 	margin-top: 0;
 	background-color: #27c4e0;
 	height: 5px;
-	width: 10%;
+	width: 5%;
 }
 .eventbox{
 	padding: 60px 0	90px;
@@ -113,15 +109,40 @@ body{
 }
 .fourth-big{
 	padding-top: 120px;
-	height: 100vh;
-}
-.imp-head{
-	font-family: 'Raleway Bold', sans-serif;
-	font-size: 30px;
 }
 .imp-info{
 	font-size: 14px;
 	line-height: 25px;
 	width: 600px;
 	color: #646567;
+}
+.imp-img{
+	padding: 30px 0 50px 0;
+	width: 550px;
+}
+.skew-div{
+	margin-top: 10px;
+	height: 6px;
+	transform: skewY(-8deg);
+	border: solid 1px #9d9d9d;
+	border-right-style: none;
+	border-left-style: none;
+}
+.fifth-big{
+	padding-top: 70px;
+}
+.teambox{
+	padding: 20px 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tbox{
+	margin: 4px 2px;
+	width: 200px;
+	height: 200px;
+}
+.memb{
+	width: 100%;
+	height: 100%;
 }
