@@ -3,25 +3,28 @@
 	<title>Cyber Buzz</title>
 	<link rel="shortcut icon" type="image" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
 </head>
 <body>
 <div class="first-big">
 	<div class="nav">
 		<div class="left-nav"><table><tbody>
 		<tr><td><a class="nav-item" href="#">HOME</a></td>
-		<td><a class="nav-item" href="#">ABOUT</a></td>
-		<td><a class="nav-item" href="#">EVENTS</a></td>
-		<td><a class="nav-item" href="#">IMPORTANT DATES</a></td>
-		<td><a class="nav-item" href="#">TEAM</a></td>
-		<td><a class="nav-item" href="#">SCHEDULE</a></td>
-		<td><a class="nav-item" href="#">TEACHERS</a></td>
+		<td><a class="nav-item smoothscroll" href="#about">ABOUT</a></td>
+		<td><a class="nav-item smoothscroll" href="#events">EVENTS</a></td>
+		<td><a class="nav-item smoothscroll" href="#dates">IMPORTANT DATES</a></td>
+		<td><a class="nav-item smoothscroll" href="#team">TEAM</a></td>
+		<td><a class="nav-item smoothscroll" href="#schedule">SCHEDULE</a></td>
 		<td><a class="nav-item" href="#" target="_blank">REGISTER</a></td>
-	</tr></tbody></table></div>
+		</tr></tbody></table>
+		</div>
 		<div class="right-nav"><span><a class="nav-item right" href="fb.com" target="_blank">$</a></span>
 		<span><a class="nav-item right" href="plus.google.com" target="_blank">G+</a></span></div> <!-- align this to right -->
 	</div>
 </div>
-<div class="second-big">
+<div class="second-big" id="about">
 	<div class="img-info"><img src="images/Laptop_Graphic.png" class="img-info-real"></div>
 	<div class="info"><div class="container"><span class = "heading">About Cyber Buzz</span><br><br><br>
 		<span class="info-desc">CyberBuzz is the prestigious tech symposium hosted annually by Amity International School Sector 43, Gurugram. From 4 events to a dozen this event has grown to be a learning experience for techies across Delhi NCR, enhancing their creativity in the field.<br>It is not everyday that Cyber enthusiasts get a Call To Arms. Cyber Buzz 2018 will not be just a test of knowledge, but also of skills in an Open Battlefield.<br>With 14 events covering the wide domain of computers and technology, CyberBuzz XIV will be truly test of the capability and the tech quotient of the participants.<br>Create a world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing computers to making the best ones, the events leave no aspect of Cyber age untouched.</div>
@@ -34,37 +37,221 @@
 		<span class="heading">Our Events</span><br><br>
 		<p class="events-info">Create a world, master another. Capture reality, tweak it later. Create Art, make it functional. From instructing computers to making the best ones, the events leave no aspect of Cyber age untouched.</p><br><p class="btn-btm"></p>
 
-		<div class="eventbox">
-			<div class="box"><img src="images/event-logos/blitzkrieg.png" class="logo"></div>
-			<div class="box"><img src="images/event-logos/buzzer.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/surprise.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/chalchitra.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/clickhe.png" class="logo"></div>
-			<div class="box"><img src="images/event-logos/hardware.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/evolutioners.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/programming.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/opus.png" class="logo"></div>
-			<div class="box"><img src="images/event-logos/playgue.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/prezipitate.png" class="logo"></div>
-			<div class="box"><img src="images/event-logos/revamp.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/gd.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/x-word.jpg" class="logo"></div>
-			<div class="box"><img src="images/event-logos/3-D.JPG" class="logo"></div>
+		<div class="eventbox" id="events">
+			<div class="box"><img src="images/event-logos/blitzkrieg.png" class="logo" id="myBtn-01">
+				<!-- modal-->
+				<div class="modal" id="myModal-01">
+					<div class="modal-content">
+						<p class="tagline">"Remember, your mind is the best weapon you have."</p>
+						<p class = "evnt-info">Blitzkrieg is an open game development event where you have to design a complete game on the given theme.<br>
+							Prelim topics will be out by 15th April on the website and Facebook page, which are to be submitted online. <br>
+							Top 8 teams will be selected for the final day, participants are required to bring their laptops. <br>
+							Eligibility: IX - XII<br>
+							Software: Open.</p>
+						<p class = "team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<div class="close cl1">Close</div>
+					</div>
+				</div>
+				<!--modal closes-->
+			</div>
+			<div class="box"><img src="images/event-logos/buzzer.jpg" class="logo" id="myBtn-02">
+				<div class="modal" id="myModal-02">
+					<div class="modal-content">
+						<p class="tagline">"Be prepared for anything, and everything, from anywhere and everywhere…"</p>
+						<p class="evnt-info">Nothing is True, Everything is Permitted.<br>
+						Except of course, cheating – or you will be evicted.<br>
+						Written prelims of 30 minutes, followed by 6 teams in the on-stage finals. <br>
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl2">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/surprise.jpg" class="logo" id="myBtn-03">
+				<div class="modal" id="myModal-03">
+					<div class="modal-content">
+						<p class="tagline">"Try us, We may Surprise you."</p>
+						<p class="evnt-info">Basics and logic is all we need to survive in life. Or in this event. What do you do to pass the time, Programming? <br>
+						Eligibility: Open.</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl3">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/chalchitra.jpg" class="logo" id="myBtn-04">
+				<div class="modal" id="myModal-04">
+					<div class="modal-content">
+						<p class="tagline">"Everybody is special. But not today, because today, we give you the story."</p>
+						<p class="evnt-info">The movie needs to be self-explanatory, 8 teams will qualify for the final round held on the day of the event. 
+						Details for prelims disclosed on April 15 2017 on Facebook page and website<br>
+						Hardware/ Software- Any <br>
+						Perk - Winning movie will be screened at the closing ceremony.. <br>
+						Eligibility: IX - XII</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl4">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/clickhe.png" class="logo" id="myBtn-05">
+				<div class="modal" id="myModal-05">
+					<div class="modal-content">
+						<p class="tagline">"There are no bad pictures; that's just how your face looks sometimes."</p>
+						<p class="evnt-info">1 hour final Photography round, followed by 1 Hour of Photoshop on the final day. Participants should have adequate knowledge about using Photoshop CS6.<br>
+						Please make sure to bring your own camera, laptop, SD card, pen drive and any other equipment you think you may require.<br>
+						Software allowed- Photoshop CS6 <br>
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl5">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/hardware.jpg" class="logo" id="myBtn-06">
+				<div class="modal" id="myModal-06">
+					<div class="modal-content">
+						<p class="tagline">“When in doubt, try another port.”</p>
+						<p class="evnt-info">Participants to be evaluated on the basis of their practical, theoretical and general knowledge about computers and their functioning<br>
+						Prelims will be written, on the basis of which 6 teams will be selected for the final event.<br>
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						<span class="close cl6">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/evolutioners.jpg" class="logo" id="myBtn-07">
+				<div class="modal" id="myModal-07">
+					<div class="modal-content">
+						<p class="tagline">"Words are what we think, Stories are what we link"</p>
+						<p class="evnt-info">Topic: “Cyber journey, from Abacus to iPhone”.<br>
+						Live,<br>
+						Create,<br>
+						Tell a story,<br>
+						Repeat.<br>
+						Eligibility - III-IV<br>
+						The team will get 1 hour to create a story.</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl7">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/programming.jpg" class="logo" id="myBtn-08">
+				<div class="modal" id="myModal-08">
+					<div class="modal-content">
+						<p class="tagline">"It always takes longer than you expect, even when you take into account the Cyber Buzz Law."</p>
+						<p class="evnt-info">Solve the problem, and then write the code. An offline written round testing the logical ability of contestants, followed by a final round. Evaluation will be based on the number of problems solved in the given time, and the accuracy.<br>
+						Languages – Python 2.7, C++, Java. <br>
+						Setup files for preferred IDE can be provided,or told beforehand during registration.<br>
+						Eligibility – IX-XII</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl8">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/opus.png" class="logo" id="myBtn-09">
+				<div class="modal" id="myModal-09">
+					<div class="modal-content">
+						<p class="tagline">“What separates design from art is that design is meant to be… functional.”</p>
+						<p class="evnt-info">The top six teams selected from the prelim entries will qualify for the final event. <br>
+						Besides the originality and appeal of the design, functionality and creativity will be fetching points.<br>
+						Languages: HTML, CSS, Javascript, Jquery.<br>
+						Software provided: Sublime Text , Adobe Photoshop<br>
+						Eligibility: IX - XII</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl9">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/playgue.jpg" class="logo" id="myBtn-10">
+				<div class="modal" id="myModal-10">
+					<div class="modal-content">
+						<p class="tagline">" "Target acquired. Alpha Mike Foxtrot.” Think about it."</p>
+						<p class="evnt-info">You game, you win. <br>
+						..Well, at least you try to! <br>
+						Eligibility-Open <br>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						<span class="close cl10">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/prezipitate.png" class="logo" id="myBtn-11">
+				<div class="modal" id="myModal-11">
+					<div class="modal-content">
+						<p class="tagline">"Ctrl + M... and here we begin!"</p>
+						<p class="evnt-info">Students will make a 3 min presentation and send it to us by 25th of April. Only selected teams will come here and battle out for the prizes. <br>
+						Topic - “Face to Face- Teacher vs Technology” <br>
+						Eligibility: V-VI.<br>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						<span class="close cl11">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/revamp.jpg" class="logo" id="myBtn-12">
+				<div class="modal" id="myModal-12">
+					<div class="modal-content">
+						<p class="tagline">"So, Don't Let Me, Don't Let Me, Don't Let Me Down"</p>
+						<p class="evnt-info">PLAY THE MOMENT,<br>
+						PAUSE MEMORIES,<br>
+						STOP THE PAIN,<br>
+						REWIND HAPPINESS.<br>
+						Top 8 teams will be selected for the final round.<br>
+						Details from prelims to be disclosed later<br>
+						Participants are required to bring their own laptops.<br>
+						Eligibility - Open<br></p>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						<span class="close cl12">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/gd.jpg" class="logo" id="myBtn-13">
+				<div class="modal" id="myModal-13">
+					<div class="modal-content">
+						<p class="tagline">"And who are you, the proud Lord said, that I must bow so low? "</p>
+						<p class="evnt-info">The intellectual depth of Mike and the aggressiveness of Harvey, clashed together in one event. Challengers will battle out in three rounds, with topics given on the spot.<br>
+						Don’t prepare. <br>
+						Eligibility – IX-XII<br></p>
+						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
+						<span class="close cl13">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/x-word.jpg" class="logo" id="myBtn-14">
+				<div class="modal" id="myModal-14">
+					<div class="modal-content">
+						<p class="tagline">"Let the minds be open to decipher the code and also the clues…"</p>
+						<p class="evnt-info">Prelims of 30 minutes, out of which, 6 qualifying teams will battle it out in the final round. <br>
+						Eligibility: Open</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl14">Close</span>
+					</div>
+				</div>
+			</div>
+			<div class="box"><img src="images/event-logos/3-D.JPG" class="logo" id="myBtn-15">
+				<div class="modal" id="myModal-15">
+					<div class="modal-content">
+						<p class="tagline">“The harder you work, the harder it is to sur[render]”</p>
+						<p class="evnt-info">Upload the entry for the prelims on Google Drive/Dropbox and email the link to amitycyberbuzz@gmail.com. Top 6 teams on the basis of the entries will be selected for the final round.<br>  
+						Selected participants must bring their own systems.<br>
+						Eligibility: IX-XII<br>
+						Prelim topics will be out by 15th April on the website and Facebook page, which are to be submitted online.</p>
+						<p class="team-eligibility">1 TEAM OF 2 MEMBERS PER SCHOOL</p>
+						<span class="close cl15">Close</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
 
-<div class="fourth-big" align="center">
+<div class="fourth-big" id = "dates" align="center">
 	<p class="heading">Important Dates</p>
 	<p class="imp-info">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed nec placerat velit. Morbi eros ipsum faucibus eget tellus lustus accumsan auctor lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p><p class="btn-btm"></p>
-	<img src="images/Important_dates.PNG" class="imp-img">
+	<img src="images/Important_dates.png" class="imp-img">
 </div>
 
 <div class="skew-div"></div>
 
 <div class="fifth-big" align="center">
-	<p class="heading">Our Team</p>
+	<p class="heading" id = "team">Our Team</p>
 	<p class="imp-info">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed nec placerat velit. Morbi eros ipsum faucibus eget tellus lustus accumsan auctor lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 	<p class="btn-btm"></p>
 
@@ -89,7 +276,7 @@
 
 </div>
 
-<div class="schedule" align="center">
+<div class="schedule" id = "schedule" align="center">
 	<p class="heading-sch">Our Schedule</p>
 	<img src="images/Schedule.png" class="sch-img">
 </div>
