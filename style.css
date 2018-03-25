@@ -91,6 +91,33 @@ body{
 	height: 5px;
 	width: 5%;
 }
+.hov-con {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	transition: .3s ease-in-out;
+}
+.box:hover .hov-con {
+  width: 100%;
+}
+.text {
+	padding-bottom: 10px;
+	border-bottom: solid #27c4e0 0.2px;
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
 .eventbox{
 	padding: 60px 0	90px;
 	display: flex;
@@ -98,6 +125,7 @@ body{
 	flex-wrap: wrap;
 }
 .box{
+	position: relative;
 	margin: 3px 2px;
 	width: 220px;
 	height: 220px;
