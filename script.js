@@ -162,9 +162,4 @@ window.onclick = function(event) {
     }
 }
 
-/*
-document.getElementById("myBtn-01").onmouseover = function() {
-    document.getElementById('hover-content-01').style.display = "block";
-}*/
-
 }

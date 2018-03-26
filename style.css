@@ -118,6 +118,33 @@ body{
 	-ms-transform: translate(-50%, -50%);
 	white-space: nowrap;
 }
+.mem{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.2);
+	overflow: hidden;
+	width: 0;
+	height: 150%;
+	transition: .2s ease-in-out;
+}
+.tbox:hover .mem{
+	height: 100%;
+	width: 100%;
+}
+.mem-name{
+	padding-top: 30px;
+	border-bottom: solid #27c4e0 0.2px;
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
 .eventbox{
 	padding: 60px 0	90px;
 	display: flex;
@@ -240,6 +267,7 @@ body{
 	justify-content: center;
 }
 .tbox{
+	position: relative;
 	margin: 4px 2px;
 	width: 200px;
 	height: 200px;
