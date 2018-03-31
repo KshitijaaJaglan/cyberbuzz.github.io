@@ -3,13 +3,29 @@
 	<title>Cyber Buzz</title>
 	<link rel="shortcut icon" type="image" href="images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kryogenix.org/code/browser/smoothscroll/smoothscroll.js"></script>
 </head>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$(window).scroll(function(){
+	var scroll = $(window).scrollTop();
+	if(scroll>100){
+		$(".nav").css("padding", "10px 80px");
+		/*$(".nav").css("	background-color", "rgba(16, 191, 222, 1")*/
+	}
+	else{
+		$(".nav").css("padding", "30px 80px");
+		/*$(".nav").css("background-color", "#10bfde80")*/
+	}
+})
+})
+</script>
 <body>
 <div class="first-big">
-	<div class="nav">
+	<div class="nav" id="#nav-top">
 		<div class="left-nav"><table><tbody>
 		<tr><td><a class="nav-item" href="#">HOME</a></td>
 		<td><a class="nav-item smoothscroll" href="#about">ABOUT</a></td>
@@ -17,12 +33,13 @@
 		<td><a class="nav-item smoothscroll" href="#dates">IMPORTANT DATES</a></td>
 		<td><a class="nav-item smoothscroll" href="#team">TEAM</a></td>
 		<td><a class="nav-item smoothscroll" href="#schedule">SCHEDULE</a></td>
+		<td><a class="nav-item smoothscroll" href="#contact">CONTACT</a></td>
 		<td><a class="nav-item" href="#" target="_blank">REGISTER</a></td>
+		<td><a class="nav-item right" style= " margin-left: 30px;" href="https://fb.com/amitycyberbuzz" target="_blank">fb</a></td>
 		</tr></tbody></table>
 		</div>
-		<div class="right-nav"><span><a class="nav-item right" href="fb.com" target="_blank">$</a></span>
-		<span><a class="nav-item right" href="plus.google.com" target="_blank">G+</a></span></div> <!-- align this to right -->
 	</div>
+	<div class="head-info"><p class = "date" style="margin: 0;">MAY 1, 2018</p><div class = "time-info">30 days	1hr	12 minutes</div><p class="buzz">The buzz is on...</p></div>
 </div>
 <div class="second-big" id="about">
 	<div class="img-info"><img src="images/Laptop_Graphic.png" class="img-info-real"></div>
@@ -185,23 +202,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="box" id="hv-12"><img src="images/event-logos/revamp.jpg" class="logo"><div class="hov-con"><div class="text">Audio Mixing</div></div>
-				<div class="modal" id="myModal-12">
-					<div class="modal-content">
-						<p class="tagline">"So, Don't Let Me, Don't Let Me, Don't Let Me Down"</p>
-						<p class="evnt-info">PLAY THE MOMENT,<br>
-						PAUSE MEMORIES,<br>
-						STOP THE PAIN,<br>
-						REWIND HAPPINESS.<br>
-						Top 8 teams will be selected for the final round.<br>
-						Details from prelims to be disclosed later<br>
-						Participants are required to bring their own laptops.<br>
-						Eligibility - Open<br></p>
-						<p class="team-eligibility">1 TEAM OF 1 MEMBER PER SCHOOL</p>
-						<span class="close cl12">Close</span>
-					</div>
-				</div>
-			</div>
 			<div class="box" id="hv-13"><img src="images/event-logos/gd.jpg" class="logo"><div class="hov-con"><div class="text">Group Discussion</div></div>
 				<div class="modal" id="myModal-13">
 					<div class="modal-content">
@@ -245,7 +245,7 @@
 
 <div class="fourth-big" id = "dates" align="center">
 	<p class="heading">Important Dates</p>
-	<p class="imp-info">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed nec placerat velit. Morbi eros ipsum faucibus eget tellus lustus accumsan auctor lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p><p class="btn-btm"></p>
+	<p class="imp-info">The buzz won't be just the same, but better and bigger than ever.<br>All only if you know what it means to punctual, and deadline-fearing warrior!</p><p class="btn-btm"></p>
 	<img src="images/Important_dates.png" class="imp-img">
 </div>
 
@@ -253,7 +253,7 @@
 
 <div class="fifth-big" align="center">
 	<p class="heading" id = "team">Our Team</p>
-	<p class="imp-info">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed nec placerat velit. Morbi eros ipsum faucibus eget tellus lustus accumsan auctor lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+	<p class="imp-info">All the ones who make Cyber Buzz what it is!<br> Never underestimate those who you don't know, as they might be the ones deciding the winners, and not so winning winners!</p>
 	<p class="btn-btm"></p>
 
 
@@ -298,7 +298,7 @@
 </div>
 
 
-<div class="footer">
+<div class="footer" id="contact">
 	<div class="footer-table"><table>
 		<tbody>
 			<tr><td class="ftr-data">Venue:</td><td class="ftr-data">Amity International School<br>Power Grid Complex<br>Sector-43, Gurugram<br></td></tr>
@@ -306,9 +306,10 @@
 		</tbody>
 	</table></div>
 
-	<div class="links">Email : amitycyberbuzz@gmail.com<br> Facebook: fb.com/amitycyberbuzz</div>
+	<div class="links">Email : amitycyberbuzz@gmail.com<br> Facebook: <a class = "link-fb" href="https://fb.com/amitycyberbuzz">fb.com/amitycyberbuzz</a></div>
 	<div class="last-logo"><img src="images/logo.png" class="last-logo-img"></div>
 </div>
+<div align = "right" class = "end">Coded by <a class = "end-name" href="https://github.com/kshitijaajaglan" target="_blank">Kshitijaa Jaglan</a></div>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
 </body>

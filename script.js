@@ -78,13 +78,6 @@ document.getElementsByClassName("cl11")[0].onclick = function() {
     document.getElementById('myModal-11').style.display = "none";
 }
 
-document.getElementById("hv-12").onclick = function() {
-    document.getElementById('myModal-12').style.display = "block";
-}
-document.getElementsByClassName("cl12")[0].onclick = function() {
-    document.getElementById('myModal-12').style.display = "none";
-}
-
 document.getElementById("hv-13").onclick = function() {
     document.getElementById('myModal-13').style.display = "block";
 }
@@ -105,8 +98,6 @@ document.getElementById("hv-15").onclick = function() {
 document.getElementsByClassName("cl15")[0].onclick = function() {
     document.getElementById('myModal-15').style.display = "none";
 }
-
-
 
 
 
@@ -147,9 +138,6 @@ window.onclick = function(event) {
     }
     else if (event.target == document.getElementById('myModal-11')) {
        document.getElementById('myModal-11').style.display = "none";
-    }
-    else if (event.target == document.getElementById('myModal-12')) {
-       document.getElementById('myModal-12').style.display = "none";
     }
     else if (event.target == document.getElementById('myModal-13')) {
        document.getElementById('myModal-13').style.display = "none";
