@@ -16,7 +16,7 @@ body{
 	width: 100%;
 	position: fixed;
 	padding: 30px 80px 40px;
-	background-color: #10bfde80;
+	background-color: #10bfdeaa;
 	display: flex;
 	z-index: 2;
 	transition-property: padding, background-color;
@@ -46,12 +46,15 @@ body{
 	background-position: center;
 }
 .head-info{
+	width: 50%;
+	margin: auto;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 40px;
 	line-height: 60px;
 	font-weight: bold;
+	background-color: #ffffff89;
 	text-align: center;
 }
 .date{
@@ -59,13 +62,14 @@ body{
 	color: #fff;
 }
 .time-info{
-	background-color: #ffffffac;
+	font-family: 'Orbitron', sans-serif;
+	background-color: transparent;
 	padding: 40px 50px;
 	position: relative;
 	width: 500px;
 	min-width: 30%;
 	margin: auto;
-	border: solid 1px #10bfde60;
+	/*border: solid 1px #10bfde60;*/
 	border-radius: 2px;
 }
 .buzz{
