@@ -39,7 +39,7 @@ body{
 }
 .first-big{
 	height: 100vh;
-	background-image: url(images/bg-main.JPG);
+	background-image: url(images/bg-main.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
