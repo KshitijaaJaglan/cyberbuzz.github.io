@@ -17,7 +17,6 @@ body{
 	position: fixed;
 	padding: 30px 80px 40px;
 	background-color: transparent;
-	color: #222;
 	display: flex;
 	z-index: 2;
 	transition-property: padding, background-color;
@@ -47,7 +46,9 @@ body{
 	background-position: center;
 }
 .head-info{
-	width: 50%;
+	background-color: #00000039;
+	color: #fff;
+	max-width: 500px;
 	margin: auto;
 	position: relative;
 	top: 50%;
@@ -55,30 +56,21 @@ body{
 	font-size: 40px;
 	line-height: 60px;
 	font-weight: bold;
-	background-color: #ffffff89;
 	text-align: center;
+	border-radius: 4px;
+	border-bottom: solid 2px #10bfde;
 }
 .date{
 	padding-bottom: 10px;
 	color: #fff;
 }
 .time-info{
-	font-family: 'Orbitron', sans-serif;
-	background-color: transparent;
+	font-family: 'IBM Plex Mono', sans-serif;
 	padding: 40px 50px;
 	position: relative;
-	width: 500px;
-	min-width: 30%;
 	margin: auto;
-	/*border: solid 1px #10bfde60;*/
+	font-size: 60px;
 	border-radius: 2px;
-}
-.buzz{
-	font-variant: small-caps;
-	font-weight: bold;
-	font-size: 35px;
-	color: #444;
-	text-align: center;
 }
 .second-big{
 	display: flex;
@@ -367,7 +359,7 @@ body{
 }
 .end{
 	padding: 15px 25px;
-	font-size: 14px;
+	font-size: 13px;
 	color: #ddd;
 	background-color: #151518;
 	font-weight: 700;
